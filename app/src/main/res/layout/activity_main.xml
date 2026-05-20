@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_status_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Statut : Prêt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_task_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:visibility="invisible"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_final_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Résultat du scan" />
+
+    <Button
+        android:id="@+id/btn_thread_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Télécharger le rapport (Thread)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_asynctask_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lancer le scan de sécurité (AsyncTask)"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_ui_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tester la réactivité (Toast)" />
+
+</LinearLayout>
